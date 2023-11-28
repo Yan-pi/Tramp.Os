@@ -5,6 +5,14 @@
       "bundler": "metro"
     },
     "name": "jobsift",
-    "slug": "jobsift"
+    "slug": "jobsift",
+    "extra": {
+      "eas": {
+        "projectId": "012ae0b6-9e55-4a2d-9704-2dc93400e46d"
+      }
+    },
+    "android": {
+      "package": "com.yanfer.trampos"
+    }
   }
 }
