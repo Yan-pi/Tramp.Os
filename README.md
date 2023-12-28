@@ -1,16 +1,16 @@
-# Documentação do Projeto Tramp.Os
+# Tramp.Os Project Documentation
 
-## Introdução
+## Introduction
 
-Bem-vindo à documentação oficial do projeto Tramp.Os, uma aplicação mobile desenvolvida em React Native com Expo. Este projeto foi realizado como parte dos estudos em uma disciplina da faculdade e utiliza a API Jsearch da RapidAPI para buscar oportunidades de trabalho e exibi-las no aplicativo.
+Welcome to the official documentation of the Tramp.Os project, a mobile application developed in React Native with Expo. This project was undertaken as part of studies in a college course and utilizes the Jsearch API from RapidAPI to search for job opportunities and display them in the application.
 
-### Estrutura do Projeto
+### Project Structure
 ___
 
-O projeto está estruturado da seguinte forma:
+The project is structured as follows:
 (major folder structure)
 
-```
+```plaintext
 Tramp.Os/
 |-- app/
 |   |-- jobdetails/
@@ -52,71 +52,71 @@ Tramp.Os/
 |-- ...
 ```
 
-- A pasta /components/` contém componentes reutilizáveis.
+- The `/components/` folder contains reusable components.
 
-- A pasta `hooks/` contém o arquivo `useFetch`, responsável por realizar as chamadas à API Jsearch usando o Axios.
+- The `hooks/` folder contains the `useFetch` file, responsible for making calls to the Jsearch API using Axios.
 
-## Configuração do Ambiente
+## Environment Setup
 ___
 
-Certifique-se de ter o Node.js, o Expo CLI e o Yarn (ou npm) instalados no seu ambiente de desenvolvimento. Se não tiver, siga as instruções na documentação oficial do [Expo](https://docs.expo.dev/get-started/installation/).
+Ensure that Node.js, Expo CLI, and Yarn (or npm) are installed in your development environment. If not, follow the instructions in the official [Expo documentation](https://docs.expo.dev/get-started/installation/).
 
 ```bash
-# Instale o Expo CLI globalmente
+# Install Expo CLI globally
 npm install -g expo-cli
 
-# Instale as dependências do projeto
+# Install project dependencies
 npm install
 ```
 
-## Dependências do Projeto
+## Project Dependencies
 _____
 
-O Tramp.Os utiliza diversas dependências essenciais para o desenvolvimento e funcionamento adequado da aplicação. Abaixo estão as principais dependências, junto com uma breve explicação do papel de cada uma:
+Tramp.Os uses several essential dependencies for development and proper application functioning. Below are the main dependencies, along with a brief explanation of each:
 
 ### [Expo](https://docs.expo.dev/)
 
-O Expo é uma plataforma que facilita o desenvolvimento de aplicativos React Native, fornecendo ferramentas e serviços adicionais. Ele simplifica tarefas como o acesso a recursos nativos do dispositivo, facilitando o desenvolvimento multiplataforma.
+Expo is a platform that facilitates the development of React Native applications by providing additional tools and services. It simplifies tasks such as accessing native device resources, making multi-platform development easier.
 
 ```bash
-# Instalação do Expo CLI
+# Expo CLI installation
 npm install -g expo-cli
 ```
 
 ### [React Native](https://reactnative.dev/)
 
-O React Native é um framework para criar aplicativos móveis usando React e JavaScript. Ele permite o desenvolvimento de aplicativos nativos para iOS e Android com uma base de código comum.
+React Native is a framework for building mobile applications using React and JavaScript. It enables the development of native iOS and Android apps with a common codebase.
 
 ```bash
-# Instalação do React Native
+# React Native installation
 npm install react-native
 ```
 
 ### [Axios](https://axios-http.com/)
 
-O Axios é um cliente HTTP baseado em Promises utilizado para fazer requisições HTTP. Ele simplifica o processo de comunicação com APIs, fornecendo uma interface fácil de usar para realizar solicitações e lidar com respostas.
+Axios is a Promise-based HTTP client used for making HTTP requests. It simplifies the process of communicating with APIs, providing an easy-to-use interface for making requests and handling responses.
 
 ```bash
-# Instalação do Axios
+# Axios installation
 npm install axios
 ```
 
 ### [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-O JavaScript é a linguagem de programação utilizada para desenvolver a lógica e a interação dinâmica no Tramp.Os. Ele é a principal linguagem de programação para o desenvolvimento web e móvel, proporcionando a capacidade de criar aplicações interativas e responsivas.
+JavaScript is the programming language used to develop logic and dynamic interaction in Tramp.Os. It is the primary programming language for web and mobile development, providing the ability to create interactive and responsive applications.
 
-Não é necessário instalar o JavaScript separadamente, pois é interpretado pelos navegadores ou pelo ambiente Node.js.
+No separate installation of JavaScript is required, as it is interpreted by browsers or the Node.js environment.
 
-## Configuração da API Jsearch
+## Jsearch API Configuration
 _____
 
-O projeto utiliza a API Jsearch da RapidAPI para buscar oportunidades de trabalho. Para configurar a API, siga estes passos:
+The project uses the Jsearch API from RapidAPI to search for job opportunities. To configure the API, follow these steps:
 
-1. Acesse [RapidAPI](https://rapidapi.com/).
-2. Crie uma conta ou faça login, se já tiver uma.
-3. Assine o plano gratuito da Jsearch API.
-4. Obtenha a chave da API Jsearch na página de configurações da RapidAPI.
-5. Substitua a chave da API no arquivo `hook/useFetch.js`.
+1. Access [RapidAPI](https://rapidapi.com/).
+2. Create an account or log in if you already have one.
+3. Subscribe to the free plan of the Jsearch API.
+4. Get the Jsearch API key on the RapidAPI settings page.
+5. Replace the API key in the `hook/useFetch.js` file.
 
 ```javascript
 // src/services/api.js
@@ -172,23 +172,23 @@ const useFetch = (endpoint, query) => {
 export default useFetch;
 ```
 
-## Executando o Projeto
-____
+## Running the Project
+_____
 
-Com as dependências instaladas e a chave da API configurada, você pode iniciar o projeto com o seguinte comando:
+With the dependencies installed and the API key configured, you can start the project with the following command:
 
 ```bash
 npx expo start
 ```
 
-Isso abrirá o Expo Developer Tools no seu navegador. Você pode então executar o aplicativo em um emulador ou em um dispositivo físico usando o aplicativo Expo Go.
+This will open the Expo Developer Tools in your browser. You can then run the app on an emulator or on a physical device using the Expo Go app.
 
-## Observações
+## Notes
 
-Este projeto foi desenvolvido com base em um tutorial e como parte de um projeto acadêmico. Se você encontrar dificuldades ou quiser contribuir, sinta-se à vontade para abrir um problema ou enviar uma solicitação de pull no repositório do GitHub.
+This project was developed based on a tutorial and as part of an academic project. If you encounter difficulties or want to contribute, feel free to open an issue or submit a pull request on the GitHub repository.
 
-GitHub do Projeto: [Tramp.Os]([https://github.com/seu-username/tramp-os](https://github.com/Yan-pi/Tramp.Os))
+Project GitHub: [Tramp.Os](https://github.com/Yan-pi/Tramp.Os)
 
 ---
 
-Esperamos que esta documentação seja útil para entender a estrutura e configurar o ambiente para o projeto Tramp.Os. Se tiver dúvidas adicionais, consulte a documentação oficial do [Expo](https://docs.expo.dev/) e do [React Native](https://reactnative.dev/docs/getting-started).
+We hope this documentation is helpful for understanding the structure and setting up the environment for the Tramp.Os project. If you have additional questions, refer to the official [Expo](https://docs.expo.dev/) and [React Native](https://reactnative.dev/docs/getting-started) documentation.
